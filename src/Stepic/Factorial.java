@@ -9,6 +9,6 @@ public class Factorial {
         for(int i=1;i<=value;i++){
             num = num.multiply(BigInteger.valueOf(i));
         }
-        System.out.println(num);
+        System.out.println("Factorial numeric " + value + " is " + num);
     }
 }
