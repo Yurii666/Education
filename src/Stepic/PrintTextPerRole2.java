@@ -1,5 +1,5 @@
 package Stepic;
-
+//site task stepik
 public class PrintTextPerRole2 {
     public static void main(String[] args) {
 
@@ -18,20 +18,20 @@ public class PrintTextPerRole2 {
         forSearching[i] = roles[i]+":";
     }
    //create a variable to return
-        StringBuilder a =new StringBuilder();
+        StringBuilder toReturn =new StringBuilder();
         for(int i =0;i< roles.length;i++){
-            a.append(forSearching[i]);
-            a.append('\n');
+            toReturn.append(forSearching[i]);
+            toReturn.append('\n');
             for(int j=0;j< textLines.length;j++){
                 if(textLines[j].startsWith(forSearching[i]+ " ")) {
                     String toReplace = (j+1)+")";
-                    a.append(toReplace);
-                    a.append(textLines[j].substring(forSearching[i].length()));
-                    a.append('\n');
+                    toReturn.append(toReplace);
+                    toReturn.append(textLines[j].substring(forSearching[i].length()));
+                    toReturn.append('\n');
             }
         }
-        a.append('\n');
+            toReturn.append('\n');
    }
-        System.out.println(a);
+        System.out.println(toReturn);
 }
 }
