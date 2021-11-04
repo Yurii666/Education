@@ -1,5 +1,5 @@
 package questions;
-
+// сделал все, что мог))
 class Numeric {
     String value;
     Boolean palin = true;

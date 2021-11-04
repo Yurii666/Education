@@ -1,5 +1,5 @@
 package Stepic;
-
+//эта задача с сайта степик
 import java.util.Arrays;
 
 public class MergeArrays {

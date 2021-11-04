@@ -1,5 +1,5 @@
 package Stepic;
-
+//эта задача с сайта степик
 import java.math.BigInteger;
 
 public class Factorial {
