@@ -1,5 +1,6 @@
 package Stepic;
-//site task stepik
+//this task from the stepic site
+//Write a method that will group the lines by role, number them and return the result in the form of ready-made text
 public class PrintTextPerRole2 {
     public static void main(String[] args) {
 
@@ -14,12 +15,10 @@ public class PrintTextPerRole2 {
             "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
         //array for variables to search by role
     String[] forSearching=new String[roles.length];
-   for(int i =0;i< roles.length;i++){
-        forSearching[i] = roles[i]+":";
-    }
    //create a variable to return
         StringBuilder toReturn =new StringBuilder();
         for(int i =0;i< roles.length;i++){
+            forSearching[i] = roles[i]+":";
             toReturn.append(forSearching[i]);
             toReturn.append('\n');
             for(int j=0;j< textLines.length;j++){
