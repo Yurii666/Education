@@ -1,5 +1,7 @@
 package questions;
-// сделал все, что мог))
+// Implement a method that checks if the given string or number is a palindrome.
+//in the case of a number, find the sum of the numbers that make up the number and find out the parity of the number
+// and the sum
 class Numeric {
     String value;
     Boolean palin = true;

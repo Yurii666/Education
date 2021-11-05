@@ -1,5 +1,7 @@
 package Stepic;
-//эта задача с сайта степик
+//this task is 2.3 from the stepik site.
+//Implement a method that checks if the given string is a palindrome.
+//Madam, I'm Adam!
 public class Palindrome {
     public static void main(String[] args) {
          boolean palin=true;
@@ -13,11 +15,12 @@ public class Palindrome {
                 break;
             }
         }
-        //return palin;
-        if(palin)
-        System.out.println("text " + text + " is palindrome");
-        else
-        System.out.println("text " + text + " does not palindrome");
+        //checking the correctness of the task
+        if(palin) {
+            System.out.println("text " + text + " is palindrome");
+        }else {
+            System.out.println("text " + text + " does not palindrome");
+        }
     }
 }
 

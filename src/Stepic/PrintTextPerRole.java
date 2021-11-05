@@ -1,5 +1,6 @@
 package Stepic;
 //this task from the stepic site
+//Write a method that will group the lines by role, number them and return the result in the form of ready-made text
 //since it works for me but not on the site, I will make 2 option
 public class PrintTextPerRole {
     public static void main(String[] args) {
@@ -13,11 +14,10 @@ public class PrintTextPerRole {
                 "Артемий Филиппович: Вот не было заботы, так подай!",
                 "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
         String[] forSearching=new String[roles.length];
-        for(int i =0;i< roles.length;i++){
-            forSearching[i] = roles[i]+":";
-        }
+
         for(int i =0;i< roles.length;i++){
             System.out.println(forSearching[i]);
+            forSearching[i] = roles[i]+":";
             for(int j=0;j< textLines.length;j++){
                 if(textLines[j].contains(roles[i] + ":")) {
                     String toReplace = (j+1)+")";
