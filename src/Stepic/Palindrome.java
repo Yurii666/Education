@@ -6,7 +6,7 @@ public class Palindrome {
     public static void main(String[] args) {
          boolean palin=true;
         String text = "Madam, I'm Adam!";
-        String text1 = "";
+        String text1;
         text1 = text.toLowerCase();
         text1 = text1.replaceAll("[^a-zа-я0-9]","");
         for(int i =0;i<text1.length()/2;i++){
