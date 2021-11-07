@@ -6,11 +6,11 @@ public class Palindrome {
     public static void main(String[] args) {
          boolean palin=true;
         String text = "Madam, I'm Adam!";
-        String text1;
-        text1 = text.toLowerCase();
-        text1 = text1.replaceAll("[^a-zа-я0-9]","");
-        for(int i =0;i<text1.length()/2;i++){
-            if (text1.charAt(i) != text1.charAt(text1.length() - i - 1)) {
+        String line;
+        line = text.toLowerCase();
+        line = line.replaceAll("[^a-zа-я0-9]","");
+        for(int i =0;i<line.length()/2;i++){
+            if (line.charAt(i) != line.charAt(line.length() - i - 1)) {
                 palin = false;
                 break;
             }
