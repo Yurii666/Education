@@ -17,10 +17,12 @@ class FixedStack implements IntStack{
     }
 
     public void push(int item){
-        if(tos == stck.length-1)
+        if(tos == stck.length-1) {
             System.out.println("стек заполнен");
-        else
+        }
+        else {
             stck[++tos] = item;
+        }
     }
 
     public int pop() {
@@ -35,12 +37,20 @@ public class IFTest {
     public static void main(String[] args) {
         FixedStack mystack1 = new FixedStack(5);
         FixedStack mystack2 = new FixedStack(8);
-        for(int i=0;i<5;i++) mystack1.push(i);
-        for(int i=0;i<8;i++) mystack2.push(i);
+        for(int i=0;i<5;i++) {
+            mystack1.push(i);
+        }
+        for(int i=0;i<8;i++) {
+            mystack2.push(i);
+        }
         System.out.println("переменные в стеке mystack1: ");
-        for(int i=0;i<5;i++) System.out.println(mystack1.pop());
+        for(int i=0;i<5;i++) {
+            System.out.println(mystack1.pop());
+        }
         System.out.println("переменные в стеке mystack2: ");
-        for(int i=0;i<8;i++) System.out.println(mystack2.pop());
+        for(int i=0;i<8;i++) {
+            System.out.println(mystack2.pop());
+        }
 
     }
 }

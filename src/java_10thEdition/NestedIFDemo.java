@@ -12,9 +12,11 @@ class B15 implements A15.NestedIf{
 public class NestedIFDemo {
     public static void main(String[] args) {
         A15.NestedIf nif= new B15();
-        if(nif.isNotNegative(15))
+        if(nif.isNotNegative(15)) {
             System.out.println("число 10 неотрицательное");
-        if (nif.isNotNegative(-12))
+        }
+        if (nif.isNotNegative(-12)) {
             System.out.println("это не будет выведено");
+        }
     }
 }

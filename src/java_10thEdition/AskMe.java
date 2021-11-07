@@ -1,6 +1,5 @@
 package java_10thEdition;
 
-import java.sql.SQLOutput;
 import java.util.Random;
 
 interface SharedConstants{
@@ -14,16 +13,22 @@ interface SharedConstants{
 class Question implements SharedConstants{
     Random rand = new Random();
     int ask(){
-        int prod = (int)(100* rand.nextDouble());
-        if(prod<30)
+        int prod = (int)(rand.nextInt(100));
+        if(prod<30) {
             return NO;
-        else if (prod<60)
+        }
+        else if (prod<60) {
             return YES;
-        else if (prod<75)
+        }
+        else if (prod<75) {
             return LATER;
-        else if (prod<98)
+        }
+        else if (prod<98){
             return SOON;
-        else return NEWER;
+        }
+        else {
+            return NEWER;
+        }
     }
 }
  class AskMe implements SharedConstants{
