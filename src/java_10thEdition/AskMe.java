@@ -49,6 +49,8 @@ class Question implements SharedConstants{
             case NEWER:
                 System.out.println("newer");
                 break;
+            default:
+                System.out.println("ERROR");
         }
     }
      public static void main(String[] args) {
