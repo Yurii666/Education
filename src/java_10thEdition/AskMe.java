@@ -51,6 +51,7 @@ class Question implements SharedConstants{
                 break;
             default:
                 System.out.println("ERROR");
+                break;
         }
     }
      public static void main(String[] args) {
