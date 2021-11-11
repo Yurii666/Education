@@ -13,7 +13,7 @@ interface SharedConstants{
 class Question implements SharedConstants{
     Random rand = new Random();
     int ask(){
-        int prod = (int)(rand.nextInt(100));
+        int prod = rand.nextInt(100);
         if(prod<30) {
             return NO;
         }
