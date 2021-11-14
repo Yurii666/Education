@@ -11,8 +11,6 @@ package Stepic;
 //In this task, the charAt () and subSequence () methods will always be supplied with correct input parameters,
 // so there is no need to check them and handle errors.
 
-import java.util.Arrays;
-
 class AsciiCharSequence implements CharSequence{
     private byte array[];
 
@@ -28,21 +26,21 @@ class AsciiCharSequence implements CharSequence{
 
     @Override
     public char charAt(int index) {
-        char charA = new String(array[index], "UTF-16").toCharArray;
-        return charA;
+        return (char)array[index];
     }
     @Override
-    public CharSequence subSequence(int start, int end) {
-        StringBuilder x = new StringBuilder("");
-        for (int i = start; i<end;i++)
-            x.append(new String(array[i], "UTF-16"));
-        return x;
+    public AsciiCharSequence subSequence(int start, int end) {
+        byte[] x = new byte[end-start];
+        for (int i = 0; i<end-start;i++) {
+            x[i] = (array[i+start]);
+        }
+        AsciiCharSequence ex = new AsciiCharSequence(x);
+        return ex;
     }
 
     @Override
     public String toString() {
-
-        return Arrays.toString(array);
+        return new String(array);
     }
 }
 public class AsciiCharSequenceDemo {
